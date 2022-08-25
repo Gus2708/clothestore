@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Nunito:ital,wght@0,300;0,400;0,600;1,300&family=Rubik:ital,wght@0,300;0,400;0,600;1,400&family=Silkscreen:wght@400;700&display=swap');
+/*
+font-family: 'Duru Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Silkscreen', cursive;
+*/
+
+body{
+  font-family: 'Rubik', sans-serif;
+  background-color: #E5E5E5;
+  color: #0C0A00;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbarComponents{
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbarComponents .wrapper{
+  max-width: 100vw;
+  padding: 10px 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.navbarComponents .wrapper > div{
+  flex: 1;
+}
+
+.navbarComponents .wrapper .left{
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navbarComponents .wrapper .left .searchContainer{
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.navbarComponents .wrapper .left .searchContainer input{
+  padding: .5em .5em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 70%;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  margin-right: .5rem;
+  font-family: 'Duru Sans', sans-serif;
+  font-weight: bold;
+  font-size: clamp(10px, 1vw, 16px);
+  transition: all .3s ease;
+  background-color: #E5E5E5;
+  color: #0C0A00;
 }
 
-.App-link {
-  color: #61dafb;
+.navbarComponents .wrapper .left .searchContainer input:focus{
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+  transition: all .3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbarComponents .wrapper .left .searchContainer input:active{
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+  transition: all .3s ease;
+  
+}
+
+.navbarComponents .wrapper .left .searchContainer .searchButton{
+  font-size: clamp(20px, 1.6vw, 27px);
+  padding: .1em;
+  cursor: pointer;
+  color: #0c0a009a;
+}
+
+
+@media only screen and (max-device-width: 375px) {
+  .navbarComponents .wrapper .left{
+    display: block;
+    flex: none;
+    width: 100%;
+    order: 2;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbarComponents .wrapper .left .searchContainer{
+    justify-content: center;
+    width: 100%;
+    margin-top: .6em;
   }
+
+  .navbarComponents .wrapper .left .searchContainer input{
+    width: 90%;
+    padding: .9em .450em;
+  }
+}
+
+.navbarComponents .wrapper .center{
+  display: flex;
+  justify-content: center;
+  font-size: clamp(16px, 2.5vw, 26px);
+  font-family: 'Silkscreen', cursive;
+  
+}
+
+.navbarComponents .wrapper .center .logo b{
+  font-weight: bold;
+  font-size: clamp(28px, 2.5vw, 38px);
+  letter-spacing: -1px;
+}
+
+@media only screen and (max-device-width: 375px){
+  .navbarComponents .wrapper .center{
+    flex: none;
+    width: 30%;
+    justify-content: flex-start;
+  }
+}
+
+.navbarComponents .wrapper .right{
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+  align-content: center;
+}
+
+.navbarComponents .wrapper .right div{
+  display: flex;
+  margin-right: 1.5em;
+  cursor: pointer;
+  font-size: clamp(9px, 1.4vw, 14px);
+  padding: 0.5em .5em;
+}
+
+.navbarComponents .wrapper .right .cart{
+  font-size: clamp(17px, 1.7vw, 32px);
+  cursor: pointer;
+  margin-right: 0;
+  border-radius: 50%;
+  padding: 0.2em .2em;
+}
+
+@media only screen and (max-device-width: 375px){
+  .navbarComponents .wrapper .right{
+    width: 70%;
+    padding: .7em .2em;
+    flex: none;
+  }
+
 }
