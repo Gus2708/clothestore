@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "description": "Camiseta Jujutsu Kaisen Blanca",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/13Cww2Wz/Jujutsu-kaisen-2.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 2,
+        "description": "Camiseta Jujutsu Kaisen Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/Y2Y6ZXSX/Jujutsu-kaisen-1.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 3,
+        "description": "Camiseta Dragon Ball Gris",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/d32GC0XM/Dragon-Ball-1.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 4,
+        "description": "Camiseta Dragon Ball Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/Wb7Mbhgg/Dragon-ball-2.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 5,
+        "description": "Camiseta Cowboy Bebop Blanca",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/prbDyjsY/Cowboy-bebop.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 6,
+        "description": "Camiseta Killua Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/tCb3jhZ9/Killua.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 7,
+        "description": "Camiseta Tanjiro Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/NjfRyBkV/Tanjiro.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 8,
+        "description": "Camiseta Jujutsu Kaisen Blanca",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/13Cww2Wz/Jujutsu-kaisen-2.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 9,
+        "description": "Camiseta Jujutsu Kaisen Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/Y2Y6ZXSX/Jujutsu-kaisen-1.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 10,
+        "description": "Camiseta Dragon Ball Gris",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/d32GC0XM/Dragon-Ball-1.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 11,
+        "description": "Camiseta Dragon Ball Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/Wb7Mbhgg/Dragon-ball-2.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 12,
+        "description": "Camiseta Cowboy Bebop Blanca",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/prbDyjsY/Cowboy-bebop.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 13,
+        "description": "Camiseta Killua Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/tCb3jhZ9/Killua.png",
+        "tag": "Camiseta"
+    },
+    {
+        "id": 14,
+        "description": "Camiseta Tanjiro Negra",
+        "price": 9.99,
+        "image": "https://i.postimg.cc/NjfRyBkV/Tanjiro.png",
+        "tag": "Camiseta"
+    }
+
+]

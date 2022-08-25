@@ -18,16 +18,21 @@ body{
 }
 
 .navbarComponents{
+  width: 100vw;
   overflow: hidden;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  background-color: #E5E5E5;
 }
 
 .navbarComponents .wrapper{
-  max-width: 100vw;
+  width: 100vw;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
   flex-wrap: wrap;
+  background: #E5E5E5;
 }
 
 .navbarComponents .wrapper > div{
@@ -36,16 +41,15 @@ body{
 
 .navbarComponents .wrapper .left{
   font-size: 14px;
-  display: flex;
   justify-content: space-between;
 }
 
 
 .navbarComponents .wrapper .left .searchContainer{
-  display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  transition: all .3s ease;
 }
 .navbarComponents .wrapper .left .searchContainer input{
   padding: .5em .5em;
@@ -83,9 +87,8 @@ body{
 }
 
 
-@media only screen and (max-device-width: 375px) {
+@media only screen and (max-device-width: 768px) {
   .navbarComponents .wrapper .left{
-    display: block;
     flex: none;
     width: 100%;
     order: 2;
@@ -104,8 +107,6 @@ body{
 }
 
 .navbarComponents .wrapper .center{
-  display: flex;
-  justify-content: center;
   font-size: clamp(16px, 2.5vw, 26px);
   font-family: 'Silkscreen', cursive;
   
@@ -117,7 +118,7 @@ body{
   letter-spacing: -1px;
 }
 
-@media only screen and (max-device-width: 375px){
+@media only screen and (max-device-width: 768px){
   .navbarComponents .wrapper .center{
     flex: none;
     width: 30%;
@@ -136,8 +137,9 @@ body{
   display: flex;
   margin-right: 1.5em;
   cursor: pointer;
-  font-size: clamp(9px, 1.4vw, 14px);
+  font-size: clamp(10px, 1.6vw, 16px);
   padding: 0.5em .5em;
+  align-content: flex-end;
 }
 
 .navbarComponents .wrapper .right .cart{
@@ -148,11 +150,201 @@ body{
   padding: 0.2em .2em;
 }
 
-@media only screen and (max-device-width: 375px){
+@media only screen and (max-device-width: 768px){
   .navbarComponents .wrapper .right{
     width: 70%;
     padding: .7em .2em;
     flex: none;
   }
 
+}
+
+.homeContainer{
+ max-width: 100vw;
+ overflow: hidden;
+ position: relative;
+}
+
+.homeContainer .products{
+  position: relative;
+  width: 100%;
+  padding: 2%;
+  justify-content: space-between;
+}
+
+@media only screen and (max-device-width: 768px){
+  .homeContainer .products{
+    justify-content: space-between;
+  }
+
+  .card{
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-device-width: 585px){
+  .homeContainer .products{
+    justify-content: space-center;
+  }
+
+  .card{
+    flex-basis: 100%;
+  }
+  .card .text{
+    font-size: clamp(18px, 1.5vw, 30px);
+  }
+}
+
+
+.homeContainer .products::after{
+  content: "";
+  flex: auto;
+}
+
+.card{
+  position: relative;
+  border-radius: 5%;
+  margin: .8em 2.5%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card .text{
+  width: 100%;
+  position: absolute;
+  font-size:clamp( 15px, 1.5vw, 18px) ;
+  bottom: 0;
+  height: 40%;
+  padding: .7em .5em;
+  color: #E5E5E5;
+  font-family: 'Duru Sans', sans-serif;
+
+  background: linear-gradient(90deg, rgba(3, 3, 3, 0.6) 10%, transparent 100%);
+
+  background: -moz-linear-gradient(90deg, rgba(3, 3, 3, 0.6) 10%, transparent 100%);
+
+  background: -webkit-linear-gradient(90deg, rgba(3, 3, 3, 0.6) 10%, transparent 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr=rgba(3, 3, 3, 0.226), endColorstr=transparent, GradientType=1 );
+}
+
+.containerL{
+  height: 80vh;
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.loginContainer{
+  width: calc(90vw - 5vw);
+  border-radius: .5em;
+  padding: 1em calc(.75em + .75vw);
+  font-size: calc(1em + .5vw);
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (min-device-width: 620px){
+  .loginContainer{
+    width: calc(80vw - 5vw);
+    margin-top: calc(1em + 1vw);
+  }
+}
+
+@media only screen and (min-device-width: 768px){
+  .loginContainer{
+    width: calc(70vw - 5vw);
+    margin-top: calc(2em + 2vw);
+  }
+}
+
+@media only screen and (min-device-width: 900px){
+  .loginContainer{
+    width: calc(50vw - 15vw);
+    margin-top: calc(2em + 2vw);
+  }
+
+  .loginContainer h1{
+    font-size: calc(1.4em + .6vw);
+  }
+}
+
+.loginContainer h1{
+  font-size: calc(1.4em + .4vw);
+  font-family: 'Silkscreen', cursive;
+  border-bottom: #FDA10D 3px solid;
+  font-weight: bold;
+  margin-bottom: calc(2em + .7vw);
+  margin-top: calc(.5em + .7vw);
+}
+
+.loginContainer input{
+  display: block;
+  width: 100%;
+  height: calc(10% + 1vw);
+  margin-bottom: calc(2em + .7vw);
+  padding: calc(.8em + .1vw) ;
+  font-size: calc(.6em + .3vw);
+  font-family: 'Duru Sans', sans-serif;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #E5E5E5;
+  color: #0C0A00;
+  transition: all .3s ease;
+}
+
+.loginContainer .password{
+  margin-bottom: calc(3em + .8vw);
+}
+
+.loginContainer input:focus{
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+  transition: all .3s ease;
+}
+
+.loginContainer input:active{
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  outline: none;
+  transition: all .3s ease;
+  
+}
+
+.loginContainer button{
+  position: relative;
+  padding: .6em 1em;background: hsla(37, 98%, 52%, 1);
+  background: cc;
+  background: -moz-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, rgb(246, 208, 55) 80%);
+  background: -webkit-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, hsla(44, 100%, 62%, 1) 80%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDA10D", endColorstr="#FDA10D", GradientType=1 );
+  border-radius: .5em;
+  color: #E5E5E5;
+  font-family: 'Silkscreen', cursive;
+  font-weight: bold;
+  font-size: calc(1em + .1vw);
+  margin-bottom: 1em;
+  z-index: 1;
+}
+
+.loginContainer button::before {
+  position: absolute;
+  border-radius: .5em;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, hsla(37, 98%, 52%, 1) 12%, hsla(44, 100%, 62%, 1) 40%);
+  background: -moz-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 12%, rgb(246, 208, 55) 40%);
+  background: -webkit-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 12%, hsla(44, 100%, 62%, 1) 40%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDA10D", endColorstr="#FDA10D", GradientType=1 );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.loginContainer button:hover::before {
+  opacity: 1;
 }
