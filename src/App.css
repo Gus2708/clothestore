@@ -109,7 +109,7 @@ body{
 .navbarComponents .wrapper .center{
   font-size: clamp(16px, 2.5vw, 26px);
   font-family: 'Silkscreen', cursive;
-  
+  cursor: pointer;
 }
 
 .navbarComponents .wrapper .center .logo b{
@@ -249,7 +249,7 @@ body{
 
 @media only screen and (min-device-width: 620px){
   .loginContainer{
-    width: calc(80vw - 5vw);
+    width: calc(70vw - 5vw);
     margin-top: calc(1em + 1vw);
   }
 }
@@ -263,8 +263,8 @@ body{
 
 @media only screen and (min-device-width: 900px){
   .loginContainer{
-    width: calc(50vw - 15vw);
-    margin-top: calc(2em + 2vw);
+    width: calc(60vw - 18vw);
+    margin-top: calc(2em + 1vw);
   }
 
   .loginContainer h1{
@@ -277,15 +277,26 @@ body{
   font-family: 'Silkscreen', cursive;
   border-bottom: #FDA10D 3px solid;
   font-weight: bold;
+  margin-bottom: calc(2em + .3vw);
+  margin-top: .3em;
+}
+
+.loginContainer .inputContainer{
+  width: 100%;
   margin-bottom: calc(2em + .7vw);
-  margin-top: calc(.5em + .7vw);
+}
+
+.loginContainer .inputContainer h3{
+  margin-bottom: .3em;
+  font-size: calc(.7em + .2vw);
+  font-family: 'Duru Sans', sans-serif;
+  font-weight: light;
 }
 
 .loginContainer input{
   display: block;
   width: 100%;
-  height: calc(10% + 1vw);
-  margin-bottom: calc(2em + .7vw);
+  height: calc(55% + .5vw);
   padding: calc(.8em + .1vw) ;
   font-size: calc(.6em + .3vw);
   font-family: 'Duru Sans', sans-serif;
@@ -294,10 +305,6 @@ body{
   background-color: #E5E5E5;
   color: #0C0A00;
   transition: all .3s ease;
-}
-
-.loginContainer .password{
-  margin-bottom: calc(3em + .8vw);
 }
 
 .loginContainer input:focus{
@@ -325,7 +332,8 @@ body{
   font-family: 'Silkscreen', cursive;
   font-weight: bold;
   font-size: calc(1em + .1vw);
-  margin-bottom: 1em;
+  margin-top: .6em;
+  margin-bottom: calc(.3em + .1vw);
   z-index: 1;
 }
 
@@ -347,4 +355,69 @@ body{
 }
 .loginContainer button:hover::before {
   opacity: 1;
+}
+
+.containerS{
+  height: calc(80vh + 1em) ;
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.signUpContainer{
+  padding: .7em calc(.75em + .75vw);
+  font-size: calc(1em + .2vw);
+}
+
+.signUpContainer h1{
+  display: block;
+  font-size: calc(1.4em + .4vw);
+  font-family: 'Silkscreen', cursive;
+  border-bottom: #FDA10D 3px solid;
+  font-weight: bold;
+  margin-bottom: calc(1em + .150vw);
+  margin-top: .1em;
+}
+
+.signUpContainer input{
+  height: calc(45% + .5vw);
+  padding: calc(.8em + .1vw) ;
+}
+
+.signUpContainer .inputContainer{
+  margin-bottom: calc(.5em + .3vw);
+}
+
+.signUpContainer .namesC{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.signUpContainer .namesC div{
+  width: calc(45% + 1vw);
+}
+
+.signUpContainer .number{
+  margin-bottom: 0;
+}
+
+.signUpContainer .numberAdvise{
+  width: 100%;
+  padding: 0 .3em;
+  font-size: calc(.5em + .2vw);
+  margin-bottom: calc(.5em + .5vw);
+}
+
+.signUpContainer .passwordC{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.signUpContainer .passwordC div{
+  width: calc(45% + 1vw);
 }
