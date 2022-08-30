@@ -15,19 +15,21 @@ body{
   font-family: 'Rubik', sans-serif;
   background-color: #E5E5E5;
   color: #0C0A00;
+  
 }
 
 .navbarComponents{
-  width: 100vw;
+  max-width: 100vw;
   overflow: hidden;
   position: sticky;
   top: 0%;
   left: 0%;
   background-color: #E5E5E5;
+  z-index: 40;
 }
 
 .navbarComponents .wrapper{
-  width: 100vw;
+  max-width: 100vw;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -109,6 +111,9 @@ body{
 .navbarComponents .wrapper .center{
   font-size: clamp(16px, 2.5vw, 26px);
   font-family: 'Silkscreen', cursive;
+}
+
+.navbarComponents .wrapper .center .logo{
   cursor: pointer;
 }
 
@@ -322,8 +327,8 @@ body{
 
 .loginContainer button{
   position: relative;
-  padding: .6em 1em;background: hsla(37, 98%, 52%, 1);
-  background: cc;
+  padding: .7em 2em;
+  background: hsla(37, 98%, 52%, 1);
   background: -moz-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, rgb(246, 208, 55) 80%);
   background: -webkit-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, hsla(44, 100%, 62%, 1) 80%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDA10D", endColorstr="#FDA10D", GradientType=1 );
@@ -331,7 +336,7 @@ body{
   color: #E5E5E5;
   font-family: 'Silkscreen', cursive;
   font-weight: bold;
-  font-size: calc(1em + .1vw);
+  font-size: calc(.6em + .2vw);
   margin-top: .6em;
   margin-bottom: calc(.3em + .1vw);
   z-index: 1;
@@ -419,5 +424,129 @@ body{
 }
 
 .signUpContainer .passwordC div{
-  width: calc(45% + 1vw);
+  white-space: nowrap;
+  font-size: calc();
 }
+
+.cartNavbar{
+  max-width: 100vw;
+  margin-top: 1.7em;
+}
+
+.cartNavbar h1{
+  font-size: calc(.8em + .8vw);
+  font-family: 'Silkscreen', cursive;
+  border-bottom: #FDA10D 3px solid;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.cartNavbar .backIcon{
+  font-size: calc(.8em + .9vw);
+  cursor: pointer;
+  padding: auto .6em;
+}
+
+ .itemsList{
+  max-width: 100vw;
+  overflow: hidden;
+ }
+
+ .itemsList .cartItem{
+  display: flex;
+  width: 90%;
+  padding: .5em;
+  border-radius: 5px;
+ }
+
+ .itemsList .cartItem .image{
+  height: 100%;
+  border-radius: 5px;
+ }
+
+ .itemsList .cartItem img{
+  width: 8rem;
+  height: 7rem;
+  border-radius: 5px;
+ }
+
+ .itemsList .cartItem .itemDescription .description{
+  font-size: calc(.8em + .2vw);
+  font-weight: bold;
+ }
+
+ .itemsList .cartItem .itemDescription .price{
+  font-size: calc(.75em + .2vw);
+  color: #537A5A;
+ }
+
+ .itemsList .cartItem .itemDescription .totalContainer{
+  padding: .2em;
+ }
+
+ .itemsList .cartItem .itemDescription .totalContainer .total{
+  font-size: calc(1em + .1vw);
+  padding: .2em;
+ }
+
+ .itemsList .cartItem .itemDescription .totalContainer .minus{
+  font-size: calc(1.2em + .2vw);
+  padding: .1em;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 30;
+ }
+
+ .itemsList .cartItem .itemDescription .totalContainer .plus{
+  font-size: calc(1.2em + .2vw);
+  padding: .1em;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 30;
+ }
+
+ .buyButton{
+  position: sticky;
+  bottom: 0%;
+  height: 12vh;
+  width: 100vw;
+  z-index: 20;
+ }
+
+ .buyButton button{
+  position: relative;
+  width: 10em;
+  background: -moz-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, rgb(246, 208, 55) 80%);
+  background: -webkit-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, hsla(44, 100%, 62%, 1) 80%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDA10D", endColorstr="#FDA10D", GradientType=1 );
+  border-radius: .5em;
+  color: #E5E5E5;
+  font-family: 'Silkscreen', cursive;
+  font-weight: bold;
+  font-size: calc(1.2em + .2vw);
+  padding: .5em;
+ }
+
+ .buyButton button::before {
+  position: absolute;
+  border-radius: .5em;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(0deg, hsla(37, 98%, 52%, 1) 12%, hsla(44, 100%, 62%, 1) 40%);
+  background: -moz-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 12%, rgb(246, 208, 55) 40%);
+  background: -webkit-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 12%, hsla(44, 100%, 62%, 1) 40%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FDA10D", endColorstr="#FDA10D", GradientType=1 );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.buyButton button:hover::before {
+  opacity: 1;
+}
+
+
+
