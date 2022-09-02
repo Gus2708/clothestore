@@ -30,7 +30,7 @@ const SignUp = () => {
             <input className='password' type="password" name="" id="" placeholder='*******'/>
         </div>
         <div>
-            <h3>Confirmar contraseña:</h3>
+            <h3>Confirmar:</h3>
             <input className='password' type="password" name="" id="" placeholder='*******'/>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { IoIosArrowBack } from "react-icons/io";
 import CartItem from './CartItem';
+import {Link} from 'react-router-dom'
 
 const data = require('../services/api.json');
 
@@ -18,7 +19,7 @@ const Cart = () => {
   return (
     <div className='cartContainer'>
       <div className="cartNavbar grid grid-cols-3 mx-6">
-        <div className="backButton col-span-1 flex flex-row items-center justify-start"><IoIosArrowBack className='backIcon'/></div>
+        <Link to='/' className="backButton col-span-1 flex flex-row items-center justify-start"><IoIosArrowBack className='backIcon'/></Link>
         <div className='justify-self-center text-center flex justify-center'>
           <h1>Mis compras</h1>
         </div>

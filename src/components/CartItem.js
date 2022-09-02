@@ -16,7 +16,7 @@ const CartItem = (props) => {
                 <div className="total mx-1">2</div>
                 <TbPlus className='plus shadow'/>
             </div>
-            <div className="removeButton absolute bottom-4 right-4"><TbTrashX className='text-xl z-30 cursor-pointer'/></div>
+            <div className="removeButton absolute bottom-4 right-4 z-30"><TbTrashX className='text-xl z-30 cursor-pointer'/></div>
         </div>
       </div>
     </div>

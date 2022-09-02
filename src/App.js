@@ -1,4 +1,5 @@
 import './App.css';
+
 import Cart from './components/Cart';
 import Homepage from './components/Homepage';
 import LogIn from './components/LogIn';
@@ -9,11 +10,6 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Cart></Cart>
-      {/* <SignUp></SignUp> */}
-      {/* <LogIn></LogIn> */}
-      {/* <Homepage></Homepage> */}
-
     </div>
   );
 }

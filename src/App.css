@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Nunito:ital,wght@0,300;0,400;0,600;1,300&family=Rubik:ital,wght@0,300;0,400;0,600;1,400&family=Silkscreen:wght@400;700&display=swap');
 /*
 font-family: 'Duru Sans', sans-serif;
@@ -136,23 +141,6 @@ body{
   justify-content: flex-end;
   padding: .5em;
   align-content: center;
-}
-
-.navbarComponents .wrapper .right div{
-  display: flex;
-  margin-right: 1.5em;
-  cursor: pointer;
-  font-size: clamp(10px, 1.6vw, 16px);
-  padding: 0.5em .5em;
-  align-content: flex-end;
-}
-
-.navbarComponents .wrapper .right .cart{
-  font-size: clamp(17px, 1.7vw, 32px);
-  cursor: pointer;
-  margin-right: 0;
-  border-radius: 50%;
-  padding: 0.2em .2em;
 }
 
 @media only screen and (max-device-width: 768px){
@@ -327,7 +315,7 @@ body{
 
 .loginContainer button{
   position: relative;
-  padding: .7em 2em;
+  padding: .7em 1.5em;
   background: hsla(37, 98%, 52%, 1);
   background: -moz-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, rgb(246, 208, 55) 80%);
   background: -webkit-linear-gradient(0deg, hsla(37, 98%, 52%, 1) 30%, hsla(44, 100%, 62%, 1) 80%);
@@ -336,7 +324,7 @@ body{
   color: #E5E5E5;
   font-family: 'Silkscreen', cursive;
   font-weight: bold;
-  font-size: calc(.6em + .2vw);
+  font-size: calc(.6em + .4vw);
   margin-top: .6em;
   margin-bottom: calc(.3em + .1vw);
   z-index: 1;
@@ -425,7 +413,7 @@ body{
 
 .signUpContainer .passwordC div{
   white-space: nowrap;
-  font-size: calc();
+  width: calc(45% + 1vw);
 }
 
 .cartNavbar{
@@ -471,7 +459,7 @@ body{
  }
 
  .itemsList .cartItem .itemDescription .description{
-  font-size: calc(.8em + .2vw);
+  font-size: calc(.8em + .3vw);
   font-weight: bold;
  }
 
@@ -510,7 +498,7 @@ body{
   bottom: 0%;
   height: 12vh;
   width: 100vw;
-  z-index: 20;
+  z-index: 40;
  }
 
  .buyButton button{
