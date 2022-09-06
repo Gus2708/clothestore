@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css"
 import ReactDOM from 'react-dom/client';
 import {
   BrowserRouter,
@@ -6,7 +7,6 @@ import {
   Route,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Homepage from './components/Homepage';
 import Navbar from './components/Navbar';
